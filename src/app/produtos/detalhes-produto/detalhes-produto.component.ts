@@ -21,7 +21,7 @@ export class DetalhesProdutoComponent {
     private carrinhoService: CarrinhoService
   ) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
     const routeParams = this.route.snapshot.paramMap;
     const produtoId = Number(routeParams.get("id"));
     this.produto = this.produtoService.getOne(produtoId);
