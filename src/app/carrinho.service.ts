@@ -26,6 +26,6 @@ export class CarrinhoService {
 
   limparCarrinho() {
     this.itens = [];
-    localStorage.clear;
+    localStorage.clear();
   }
 }
